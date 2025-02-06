@@ -1,0 +1,22 @@
+[project]
+name = "video-processing"
+version = "0.1.0"
+description = "Tools for doing batch video processings"
+authors = [
+    {name = "Oz Shaked",email = "oz.rnds@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ffmpeg-python (>=0.2.0,<0.3.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^4.1.1"
+pytest-asyncio = "^0.25.3"
+
